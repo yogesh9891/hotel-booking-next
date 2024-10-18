@@ -1,0 +1,605 @@
+
+
+.trending_sec {
+    padding: 60px 0px 50px 0px;
+    position: relative;
+    z-index: 0;
+
+     .head {
+        font-size: 1.9rem;
+        font-weight: 400;
+        font-family: var(--lato);
+        color: #1A1A1A;
+        margin-bottom: 5px;
+
+        span {
+            color: #526b67;
+        }
+    }
+
+    .para {
+        font-size: 17px;
+        font-weight: 400;
+        font-family: var(--lato);
+        color: #84818E;
+        margin-bottom: 40px;
+    }
+
+    .card_box {
+margin-right: 20px;
+        .slide {
+            .image {
+                position: relative;
+                width: 100%;
+                height: 250px;
+                overflow: hidden;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+transition: all 0.4s ease-in-out;
+
+&::before
+{
+    content: '';
+    background-color: rgb(0 0 0 / 25%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+transition: all 0.4s ease-in-out;
+opacity: 0;
+visibility: hidden;
+}
+                img {
+                    object-fit: cover;
+                    border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transform: scale(1);transition: all 0.4s ease-in-out;
+            opacity: 0.9;
+            width: 100%;
+            height: 100%;
+                }
+
+                &:hover
+                {
+
+                    transition: all 0.4s ease-in-out;
+
+                    &::before
+                    {
+                       
+                        opacity: 1;
+                        visibility: visible;
+                        transition: all 0.4s ease-in-out;
+                    }
+
+
+                    img
+                    {
+                        transform: scale(1.1);
+                        transition: all 0.4s ease-in-out;
+                        // opacity: 0.6;
+                    }
+
+                  
+                }
+
+               
+            }
+
+          
+
+           
+        }
+
+        .card_content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border: 1px solid #c3c7c3;
+            padding: 15px 15px 24px 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            a{
+                text-decoration: none;
+            }
+
+            .heading {
+                font-size: 21px;
+                font-weight: 400;
+                font-family: var(--lato);
+                color: #526b67;
+                margin-bottom: 0;
+            }
+
+            .location {
+                font-size: 15px;
+                font-weight: 500;
+                font-family: var(--lato);
+                color: #716e6e;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 6px;
+
+                svg {
+                    color: #716e6e;
+                    font-size: 17px;
+                }
+            }
+
+            .info {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 0;
+
+                .room {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 6px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: var(--lato);
+                    color: #716e6e;
+
+                    svg {
+                        color: #716e6e;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .price_text {
+                display: flex;
+                flex-direction: column;
+
+                .text {
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: var(--lato);
+                    color: #716e6e;
+                }
+
+                .price {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                    gap: 5px;
+                    margin-bottom: 0;
+                    font-size: 24px;
+                    font-weight: 500;
+                    font-family: var(--lato);
+                    color: #526b67;
+
+                    .day {
+                        font-size: 13px;
+                        font-weight: 500;
+                        font-family: var(--lato);
+                        color: #716e6e;
+                    }
+                }
+            }
+
+            .list {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+      
+                .item {
+                  font-size: 14px;
+                  font-weight: 400;
+                  font-family: var(--lato);
+                  color: #737373;
+                  border-right:1px solid #73737382;
+                  padding: 0px 10px;
+                }
+      
+                .item:first-child {
+                  padding-right: 6px !important;
+                  padding: 0;
+                }
+      
+                .item:last-child {
+                  border: none !important;
+                }
+              }
+        }
+    }
+
+   
+}
+
+.container_fluid
+{
+    width: 80%;
+    margin:  0 auto;
+}
+
+
+.sliderContainer {
+    position: relative;
+  }
+  
+  .customRangeInput {
+    width: 100%;
+    position: absolute;
+    bottom: -30px; /* Adjust this based on your layout */
+  }
+  
+  .slick-dots {
+    display: none; /* Hide default dots */
+  }
+  
+  @media (min-width: 600px) {
+    .customRangeInput {
+      display: none; /* Hide range input on larger screens */
+    }
+  
+    .slick-dots {
+      display: block; /* Show dots on larger screens */
+    }
+
+
+  }
+  
+
+@media only screen and (min-width:320px) and  (max-width: 349px){
+
+    .trending_sec
+    {
+        padding:25px 0px 0px 0px;
+        position: relative;
+
+        .head
+        {
+            font-size: 1.25rem !important;
+            margin-bottom: 5px;
+        }
+        .para
+        {
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+
+        .card_box
+        {
+            
+            margin-right: 5px !important;
+            padding-bottom: 20px;
+            margin-left: 5px !important;
+
+            .slide 
+            {
+                .image {
+                    height: 180px !important;
+
+                  
+               }
+            }
+
+            .card_content
+            {
+                padding: 12px 12px 20px 12px;
+                gap: 10px;
+
+                .location
+                {
+                    font-size: 14px;
+                }
+                .list
+                {
+                  .item
+                  {
+                    font-size: 12px;
+                  }
+                }
+                .heading
+                {
+                    font-size: 1.2rem;
+                }
+
+                .price_text 
+                {
+
+                    .price{
+                        display: unset !important;
+                        font-size: 1.3rem !important;
+                    }
+                    .text{
+                        font-size: 0.9rem !important;
+                        margin-right: 0.4rem;
+                    }
+                }
+            }
+            
+        }
+
+      
+    }
+
+    .container_fluid
+    {
+        width: 90%;
+    }
+
+
+
+
+}
+@media only screen and (min-width:350px) and  (max-width: 575px){
+
+    .trending_sec
+    {
+        padding:25px 0px 0px 0px;
+        position: relative;
+
+        .head
+        {
+            font-size: 1.25rem !important;
+            margin-bottom: 5px;
+        }
+        .para
+        {
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+
+        .card_box
+        {
+            
+            margin-right: 10px !important;
+            padding-bottom: 20px;
+            margin-left: 10px !important;
+      
+
+            .slide 
+            {
+                .image 
+                {
+                    height: 180px !important;
+               }
+            }
+
+            .card_content
+            {
+                padding: 12px 10px 15px 10px;
+                gap: 8px;
+
+                .location
+                {
+                    font-size: 14px;
+                }
+
+                .info
+                {
+                    gap: 8px;
+                }
+                .list
+                {
+                  .item
+                  {
+                    font-size: 12px;
+                  }
+                }
+                .heading
+                {
+                    font-size: 1.25rem;
+                }
+
+                .price_text 
+                {
+
+                    .price{
+                        display: unset !important;
+                        font-size: 1.3rem !important;
+                    }
+                    .text{
+                        font-size: 0.9rem !important;
+                        margin-right: 0.4rem;
+                    }
+                }
+            }
+            
+        }
+
+      
+    }
+
+    .container_fluid
+    {
+        width: 85%;
+    }
+
+
+
+
+}
+
+
+@media only screen and (min-width:576px) and  (max-width: 767px){
+
+    .trending_sec
+    {
+        padding: 30px  0px;
+        position: relative;
+
+        .head{
+            font-size: 1.3rem ;
+        }
+        .para
+        {
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+
+        .card_box
+        {
+            margin-right: 15px;
+
+            .slide 
+            {
+                .image {
+                    height: 200px !important;
+               }
+    
+            }
+            .card_content
+            {
+                .heading
+                {
+                    font-size: 18px;
+                }
+
+                .list
+                {
+                  .item
+                  {
+                    font-size: 11px;
+                  }
+                }
+
+                .price_text 
+                {
+                    .price{
+                        display: unset !important;
+                        font-size: 1rem !important;
+                    }
+            
+                    .text{
+                        font-size: 1rem !important;
+                        margin-right: 0.8rem;
+                    }
+                }
+            }
+            
+        }
+
+      
+    }
+
+  
+  
+   
+   
+
+
+
+    .container_fluid
+    {
+        width: 85%!important;
+    }
+
+   
+}
+
+
+
+@media only screen and (min-width:768px) and  (max-width:991px){
+    .trending_sec{
+        padding: 40px 0px 30px 0px !important;
+
+        .head
+        {
+            font-size: 1.6rem;
+        }
+
+        .para
+        {
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .card_box
+        {
+            .slide
+        {
+            .image
+            {
+                height:200px;
+            }
+        }
+
+        .card_content
+        {
+            padding-top: 15px;
+            .list
+                {
+                  .item
+                  {
+                    font-size: 12px;
+                  }
+                }
+        }
+
+
+        }
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .trending_sec
+    {
+        padding-top: 40px;
+
+        .head
+        {
+            font-size: 1.6rem;
+        }
+
+        .para
+        {
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .card_box
+        {
+            .slide
+        {
+            .image
+            {
+                height:200px;
+            }
+        }
+
+        .card_content
+        {
+            padding-top: 15px;
+            .list
+                {
+                  .item
+                  {
+                    font-size: 11px;
+                  }
+                }
+        }
+
+
+        }
+    }
+
+    .container_fluid
+    {
+        width: 82%;
+    }
+}
+@media only screen and (min-width:1200px) and (max-width:1440px) {
+    .trending_sec
+    {
+        padding-top: 50px;
+
+
+    }
+
+    .container_fluid
+    {
+        width: 90%;
+    }
+}

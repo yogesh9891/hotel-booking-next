@@ -1,0 +1,213 @@
+.myaccount .heading {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.myaccount .tab_content {
+  border: 1px solid #E4E4E4;
+  padding: 24px;
+}
+.myaccount .tab_content .top_sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.myaccount .tab_content .top_sec .title {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+  margin-bottom: 0;
+}
+.myaccount .tab_content .top_sec .btn1:global(.btn) {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #516b6a;
+}
+.myaccount .tab_content .top_sec .btn1:global(.btn) svg {
+  font-size: 20px;
+  color: #516b6a;
+}
+.myaccount .tab_content .label {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #1A1A1A;
+  margin-bottom: 3px;
+}
+.myaccount .tab_content .icon {
+  position: relative;
+}
+.myaccount .tab_content .icon .form_control {
+  border-radius: 2px;
+  border: 1.333px solid #E4E4E4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #959595;
+  resize: none;
+  position: relative;
+}
+.myaccount .tab_content .icon svg {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.9rem;
+  font-size: 22px;
+  color: rgb(149, 149, 149);
+}
+.myaccount .tab_content .icon .btn2 {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #516b6a;
+  text-decoration: underline;
+  position: absolute;
+  right: 0;
+}
+.myaccount .tab_content .form_control:global(.form-control:focus) {
+  box-shadow: none;
+}
+.myaccount .tab_content .bottom_bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.myaccount .tab_content .bottom_bar .gender_box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.myaccount .tab_content .bottom_bar .gender_box .gender {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #1A1A1A;
+}
+.myaccount .tab_content .bottom_bar .gender_box .inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.myaccount .tab_content .bottom_bar .gender_box .inputs .check:global(.form-check) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0;
+}
+.myaccount .tab_content .bottom_bar .gender_box .inputs .check:global(.form-check) .radio:global(.form-check-input) {
+  border-color: rgb(149, 149, 149);
+}
+.myaccount .tab_content .bottom_bar .gender_box .inputs .check:global(.form-check) .input_label:global(.form-check-label) {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #1A1A1A;
+}
+.myaccount .tab_content .bottom_bar .gender_box .inputs .check:global(.form-check) .radio:global(.form-check-input:checked) {
+  background-color: #FF9300;
+  border-color: #FF9300;
+}
+.myaccount .tab_content .bottom_bar .gender_box .inputs .check:global(.form-check) .radio:global(.form-check-input:focus) {
+  box-shadow: none;
+}
+.myaccount .tab_content .bottom_bar .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.myaccount .tab_content .bottom_bar .buttons .btn3:global(.btn) {
+  background-color: transparent;
+  border-color: #737373;
+  padding: 13px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--lato);
+  color: #737373;
+  border-radius: 0px;
+}
+.myaccount .tab_content .bottom_bar .buttons .btn4:global(.btn) {
+  background-color: #FF9300;
+  border-color: #FF9300;
+  padding: 13px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--lato);
+  color: #fff;
+  border-radius: 0px;
+}
+.myaccount .tab_content .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.myaccount .tab_content .buttons .btn3:global(.btn) {
+  background-color: transparent;
+  border-color: #737373;
+  padding: 13px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--lato);
+  color: #737373;
+  border-radius: 0px;
+}
+.myaccount .tab_content .buttons .btn4:global(.btn) {
+  background-color: #FF9300;
+  border-color: #FF9300;
+  padding: 13px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--lato);
+  color: #fff;
+  border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+  .myaccount .heading {
+    font-size: 1.8rem !important;
+    margin-bottom: 1.3rem !important;
+  }
+  .myaccount .top_sec {
+    margin-bottom: 15px !important;
+  }
+  .myaccount .top_sec .title {
+    font-size: 0.9rem !important;
+  }
+  .myaccount .top_sec .btn1 {
+    font-size: 0.8rem !important;
+  }
+  .myaccount .top_sec .btn1 svg {
+    font-size: 0.8rem !important;
+  }
+  .myaccount .label {
+    font-size: 1rem !important;
+  }
+  .myaccount .label span {
+    font-size: 1rem !important;
+    color: #516b6a;
+    font-weight: 600;
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=MyAccount.module.css.map */

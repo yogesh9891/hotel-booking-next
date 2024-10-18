@@ -1,0 +1,22 @@
+.hotel_sec .input {
+  padding: 30px 0px;
+  position: relative;
+  z-index: 2;
+  top: 4rem;
+}
+.hotel_sec .filter_content {
+  position: relative;
+  z-index: 1;
+  top: 7rem;
+}
+
+.border {
+  padding: 50px 0px;
+}
+.border .nofound {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: var(--lato);
+  margin-bottom: 0;
+  color: #737373;
+}/*# sourceMappingURL=Apartments.module.css.map */

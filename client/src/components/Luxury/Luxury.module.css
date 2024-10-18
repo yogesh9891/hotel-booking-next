@@ -1,0 +1,127 @@
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.luxury_sec {
+  padding: 50px 0px;
+  background-color: #f9f5f1;
+}
+.luxury_sec .head {
+  font-size: 38px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #1A1A1A;
+  margin-bottom: 10px;
+}
+.luxury_sec .head span {
+  color: #526b67;
+}
+.luxury_sec .para {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #84818E;
+  margin-bottom: 50px;
+}
+.luxury_sec .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #878787;
+  border-radius: 10px;
+  padding: 12px 10px;
+}
+.luxury_sec .card .image {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  flex: 1;
+}
+.luxury_sec .card .image img {
+  width: 100%;
+  height: 100%;
+}
+.luxury_sec .card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 2;
+}
+.luxury_sec .card .content .heading {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--lato);
+  margin-bottom: 0;
+  color: #526b67;
+  text-transform: capitalize;
+}
+.luxury_sec .card .content .desc {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #737373;
+  margin-bottom: 0;
+}
+.luxury_sec .card .content .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #526b67;
+}
+.luxury_sec .card .content .button svg {
+  font-size: 20px;
+  color: #526b67;
+}
+
+@media (max-width: 576px) {
+  .luxury_sec {
+    padding: 30px 0px;
+  }
+  .luxury_sec .para {
+    margin-bottom: 30px;
+  }
+  .luxury_sec .head {
+    font-size: 1.4rem !important;
+  }
+  .luxury_sec .card {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .luxury_sec {
+    padding: 40px 0px;
+  }
+  .luxury_sec .head {
+    font-size: 30px;
+  }
+  .luxury_sec .para {
+    margin-bottom: 30px;
+  }
+  .luxury_sec .card {
+    flex-direction: column;
+    margin-bottom: 25px !important;
+  }
+  .luxury_sec .card .image {
+    flex: auto;
+  }
+  .luxury_sec .card .content {
+    flex: auto;
+    text-align: center;
+  }
+  .luxury_sec .card .content .button {
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=Luxury.module.css.map */

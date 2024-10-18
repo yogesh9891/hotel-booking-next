@@ -1,0 +1,130 @@
+.join_hands
+{
+    padding: 40px 0px;
+    background-color: #f9f5f1;
+
+    .main_heading
+    {
+        font-size: 1.9rem;
+        color: #526b67;
+        margin-bottom: 40px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .card
+    {
+        // background-color: #f7f7f7;
+        // border: 1px solid #e5e5e5;
+        // box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.10);
+        padding: 20px 15px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        min-height: 246px;
+        
+
+        .icon
+        {
+            position: relative;
+            width: 64px;
+            height: 64px;
+            margin-bottom: 15px;
+        }
+
+        h5
+        {
+            font-size: 20px;
+            font-weight: 400;
+            color: #526b67;
+            margin-bottom: 10px;
+        }
+
+        p
+        {
+            
+            color: #747474;
+            margin-bottom: 0px;
+        }
+
+        &:hover
+        {
+            box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.10);
+            transition: all 0.4s ease;
+        }
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:1024px) {
+    .join_hands
+    {
+        padding: 25px 0px;
+
+        .main_heading
+        {
+            font-size: 1.3rem;
+    margin-bottom: 20px;
+        }
+
+        .card
+        {
+            padding: 15px;
+            margin-bottom: 15px;
+            min-height: 130px;
+
+            .icon
+            {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 10px;
+            }
+
+            h5
+            {
+                font-size: 17px;
+                margin-bottom: 5px;
+            }
+
+            p
+            {
+                font-size: 14px;
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .join_hands
+    {
+       
+padding: 30px 0px;
+        .main_heading
+        {
+            font-size: 1.5rem;
+    margin-bottom: 30px;
+        }
+
+       
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .join_hands
+    {
+       
+padding: 35px 0px;
+        .main_heading
+        {
+            font-size: 1.6rem;
+    margin-bottom: 30px;
+        }
+
+        .card
+        {
+            min-height: 200px;
+        }
+
+       
+    }
+}

@@ -1,0 +1,35 @@
+export const rolesObj = {
+    ADMIN: "ADMIN",
+    SUBADMIN: "SUBADMIN",
+    SELLER: "SELLER",
+    BUYER: "BUYER",
+    WAREHOUSE: "WAREHOUSE",
+    STORE: "STORE",
+}
+
+export const businessTypeObj = {
+    MANUFACTURER: "MANUFACTURER",
+    IMPORTER: "IMPORTER",
+    EXPORTER: "EXPORTER",
+    WHOLESALER: "WHOLESALER",
+    RESELLER: "RESELLER",
+    OTHERS: "OTHERS",
+}
+
+
+export const businessNatureObj = {
+
+    PROPRIETOR: "PROPRIETOR",
+    PARTNERSHIP: "PARTNERSHIP",
+    PRIVATELTDCO: "PRIVATE LTD CO.",
+    PUBLICLTDCO: "PUBLIC LTD CO.",
+    ONEPERSONCOMPANY: "ONE PERSON COMPANY",
+    OTHERS: "OTHERS",
+}
+
+export const discountStatus = {
+    PERCENTAGE: "PERCENTAGE",
+    FLATOFF: "FLATOFF",
+};
+
+

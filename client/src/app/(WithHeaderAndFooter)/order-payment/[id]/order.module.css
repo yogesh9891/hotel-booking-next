@@ -1,0 +1,190 @@
+.order_complete .heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 20px;
+}
+.order_complete .para {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+}
+.order_complete .content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px 30px 0px;
+}
+.order_complete .content .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.order_complete .content .info .head {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  width: 120px;
+  text-align: justify;
+}
+.order_complete .content .info .main {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  display: block;
+  width: 250px;
+  margin-left: 30px;
+}
+.order_complete .content .info .main a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+.order_complete .item_content .items {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.order_complete .item_content .main_content {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 12px;
+}
+.order_complete .item_content .main_content .item_head {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+}
+.order_complete .item_content .main_content .image {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.order_complete .item_content .main_content .pro_content .pro_name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.order_complete .item_content .main_content .pro_content .qty {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.order_complete .item_content .main_content .pro_content .price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #010F1C;
+}
+.order_complete .list {
+  border-radius: 8px;
+  padding: 20px 40px;
+  background-color: #E9E9E9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.order_complete .list_item a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.order_complete .border {
+  border: 2.5px dashed rgba(0, 0, 0, 0.5);
+  background-color: #FFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px 68px 11px 69px;
+}
+.order_complete .border .images {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.order_complete .border .tagline {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.order_complete .btn2:global(.btn) {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 0 !important;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+  .order_complete .content .info .head {
+    width: 140px;
+    font-size: 12px;
+  }
+  .order_complete .content .info .main {
+    width: 250px;
+    font-size: 13px;
+    margin-left: 15px;
+  }
+  .order_complete .item_content .main_content .image {
+    width: 100%;
+    height: 80px;
+  }
+  .order_complete .item_content .main_content .pro_name {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .order_complete .item_content .main_content .qty {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .order_complete .item_content .main_content .price {
+    font-size: 15px;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  .list {
+    padding: 15px 7px !important;
+  }
+  .list .list_item a {
+    font-size: 13px;
+  }
+  .border {
+    padding: 10px !important;
+    gap: 20px !important;
+  }
+  .border .images {
+    width: 60px !important;
+    height: 38px !important;
+  }
+  .border .images img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .border .tagline {
+    font-size: 13px;
+  }
+  .btn2:global(.btn) {
+    font-size: 15px !important;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 567px) {
+  .order_complete .item_content .main_content .image {
+    width: 100%;
+    height: 105px;
+  }
+  .order_complete .item_content .main_content .pro_name {
+    margin-bottom: 15px;
+  }
+  .order_complete .item_content .main_content .qty {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+  .order_complete .main_content .pro_content {
+    margin-left: 5%;
+  }
+}/*# sourceMappingURL=order.module.css.map */

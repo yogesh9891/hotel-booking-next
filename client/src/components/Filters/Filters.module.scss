@@ -1,0 +1,99 @@
+.filter_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    padding: 15px 10px;
+
+    .filters {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+
+        .box {
+
+            .fliter_box {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+                position: relative;
+
+                .tag {
+                    font-size: 16px;
+                    font-family: var(--lato);
+                    font-weight: 600;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+
+                svg {
+                    font-size: 20px;
+                    color: #fff;
+                }
+
+            }
+
+            // Price slider
+            .slider {
+                position: absolute;
+                top: 55px;
+                width: 350px;
+                height: 100px;
+                background-color: #fff;
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            }
+
+            // Collection
+            .list {
+                list-style: none;
+                padding: 10px 20px;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                position: absolute;
+                top: 50px;
+                background-color: #fff;
+                width: 350px;
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                z-index: 1;
+
+                .item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 10px;
+
+                    .control:global(.form-check-input) {
+                        background-color: transparent;
+                        margin: 0;
+                        border-color: #dbdbdb;
+                        border-radius: 0;
+                    }
+
+                    .control:global(.form-check-input:focus) {
+                        box-shadow: none;
+                    }
+
+                    .control:global(.form-check-input:checked[type=checkbox]) {
+                        background-color: #1A1A1A;
+                    }
+
+                    .name {
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: var(--lato);
+                        color: #1A1A1A;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+    }
+}

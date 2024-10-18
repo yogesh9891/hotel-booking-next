@@ -1,0 +1,70 @@
+.our_journey
+{
+    padding: 40px 0px;
+    background-color: #f2f7f6;
+
+  
+        .main_heading
+        {
+            font-size:1.9rem;
+            font-weight: 500;
+            font-family: var(--lato);
+            color: #1A1A1A;
+            text-align: center;
+            text-transform: capitalize;
+            margin-bottom: 3rem;
+        }
+    
+}
+
+@media only screen and (min-width:320px)  and (max-width:767px) {
+    .our_journey
+    {
+        padding: 20px 0px;
+
+        .main_heading
+        {
+            font-size: 1.4rem;
+            margin-bottom: 1.8rem;
+        }
+    }
+}
+
+@media only screen and (min-width:768px)  and (max-width:991px) {
+    .our_journey
+    {
+        padding: 25px 0px;
+
+        .main_heading
+        {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width:992px)  and (max-width:1199px) {
+    .our_journey
+    {
+        padding: 25px 0px;
+
+        .main_heading
+        {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width:1200px)  and (max-width:1440px) {
+    .our_journey
+    {
+        
+
+        .main_heading
+        {
+           
+            margin-bottom: 2.5rem;
+        }
+    }
+}

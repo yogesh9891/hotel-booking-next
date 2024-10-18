@@ -1,0 +1,133 @@
+.join_hands
+{
+    padding:  40px 0px;
+
+    .main_heading
+    {
+        font-size: 1.9rem;
+        color: #526b67;
+        margin-bottom: 40px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .content_box
+    {
+        padding: 0px 0px 0px 30px;
+
+        .card
+        {
+         margin-bottom: 20px;
+    
+            h5
+            {
+                font-size: 20px;
+                font-weight: 400;
+                color: #526b67;
+                margin-bottom: 5px;
+            }
+    
+            p
+            {
+                
+                color: #747474;
+            }
+    
+        }
+    }
+   
+
+    .image
+    {
+        position: relative;
+        width: 100%;
+        height: 470px;
+
+        img
+        {
+            object-fit: cover;
+        }
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+    .join_hands
+    {
+        padding: 25px 0px 0px 0px;
+
+        .main_heading
+        {
+            font-size: 1.3rem;
+    margin-bottom: 20px;
+        }
+
+        .content_box
+        {
+            padding:  15px 0px 0px  10px;
+            .card
+        {
+         
+
+            h5
+            {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            p
+            {
+                font-size: 14px;
+              
+
+            }
+        }
+        }
+
+        .image
+        {
+            height: 250px;
+        }
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .join_hands
+    {
+        padding: 30px 0px 0px 0px;
+
+        .main_heading
+        {
+            font-size: 1.6rem;
+    margin-bottom: 30px;
+        }
+
+        .content_box
+        {
+            padding:  15px 0px 0px  10px;
+            .card
+        {
+         
+
+            h5
+            {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            p
+            {
+                font-size: 14px;
+              
+
+            }
+        }
+        }
+
+        .image
+        {
+            height: 350px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.tour_sec {
+  position: relative;
+  margin-top: 50px;
+}
+.tour_sec .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
+  width: 100%;
+  height: 500px;
+}
+.tour_sec .overlay .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  z-index: 2;
+  top: 26%;
+  left: 0;
+  width: 100%;
+}
+.tour_sec .overlay .content .text {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #fff;
+}
+.tour_sec .overlay .content .head {
+  font-size: 44px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #fff;
+  margin-bottom: 0;
+}
+.tour_sec .overlay .content .button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 75px;
+}
+.tour_sec .overlay .content .button svg {
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+}
+.tour_sec .tour {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  cursor: pointer;
+}/*# sourceMappingURL=TourVideo.module.css.map */

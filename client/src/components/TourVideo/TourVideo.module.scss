@@ -1,0 +1,62 @@
+.tour_sec {
+    position: relative;
+    margin-top: 50px;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+        z-index: 1;
+        width: 100%;
+        height: 500px;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            position: absolute;
+            z-index: 2;
+            top: 26%;
+            left: 0;
+            width: 100%;
+
+            .text {
+                font-size: 20px;
+                font-weight: 500;
+                font-family: var(--lato);
+                color: #fff;
+            }
+
+            .head {
+                font-size: 44px;
+                font-weight: 500;
+                font-family: var(--lato);
+                color: #fff;
+                margin-bottom: 0;
+            }
+
+            .button {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #fff;
+                text-align: center;
+                line-height: 75px;            
+
+                svg {
+                    font-size: 32px;
+                    color: rgba(0, 0, 0, 1);
+                }
+            }
+        }
+    }
+
+    .tour {
+        width: 100%;
+        height: 500px;
+        object-fit: fill;
+        cursor: pointer;
+    }
+}

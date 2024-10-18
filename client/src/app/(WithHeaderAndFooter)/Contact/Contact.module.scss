@@ -1,0 +1,635 @@
+.contact {
+    background-image: url('../../../assets/images/contactus/contactus.webp');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .heading {
+        font-size: 60px;
+        font-weight: 400;    
+        color: #fff;
+        padding: 14% 0px;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 1;
+        font-family: var(--lato);
+    }
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.loaction {
+    padding: 60px 0px;
+
+    .head_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: var(--lato);
+            color: #516b6a;
+        }
+
+        .head {
+            font-size: 30px;
+            font-weight: 500;
+            font-family: var(--lato);
+            color: #000;
+            margin-bottom: 12px;
+        }
+    }
+
+    .desc {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: var(--lato);
+        color: #737373;
+        margin-bottom: 50px;
+    }
+
+    .border {
+        position: relative;
+
+        .contact_box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 22px;
+
+            svg {
+                font-size: 50px;
+                color: #516b6a;
+            }
+
+            .name {
+                font-size: 22px;
+                font-weight: 600;
+                font-family: var(--lato);
+                color: #1A1A1A;
+                margin-bottom: 0;
+            }
+
+            .para {
+                font-size: 20px;
+                font-weight: 500;
+                font-family: var(--lato);
+                color: #737373;
+                margin-bottom: 0;
+                text-align: center;
+                height: 60px;
+            }
+
+            .link {
+                font-size: 20px;
+                font-weight: 500;
+                font-family: var(--lato);
+                color: #516b6a;
+            }
+        }
+    }
+
+    .border::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #E0E0E2;
+        width: 2px;
+        height: 100%;
+    }
+
+    .border:first-child {
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.form_sec {
+    margin-bottom: 60px;
+
+    .mb_4
+    {
+        margin-bottom: 1.5rem;
+    }
+
+
+    .form {
+        border-radius: 2px;
+        background: #FFF;
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.10);
+        padding: 50px;
+
+        .top_content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+
+            .left_side {
+                display: flex;
+                flex-direction: column;
+
+                .title {
+                    font-size: 30px;
+                    font-weight: 600;
+                    font-family: var(--lato);
+                    color: #1A1A1A;
+                    margin-bottom: 18px;
+                    border-left: 2px solid #516b6a;
+                    padding: 5px 0px 5px 10px;
+                }
+
+                .para {
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: var(--lato);
+                    color: #737373;
+                    margin-bottom: 0
+                }
+            }
+
+            .image {
+                width: 200px;
+                height: 175px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .label {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: var(--lato);
+            color: #000;
+            margin-bottom: 3px;
+        }
+
+        .icon {
+            position: relative;
+
+            .form_control {
+                border-radius: 2px;
+                border: 1.333px solid #E0E0E2;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: var(--lato);
+                color: #959595;
+                resize: none;
+                position: relative;
+            }
+
+            svg {
+                position: absolute;
+                top: 0.7rem;
+                right: 0.9rem;
+                font-size: 22px;
+                color: rgba(149, 149, 149, 1);
+            }
+        }
+
+        .form_control:global(.form-control:focus) {
+            box-shadow: none;
+        }
+
+        .btn4:global(.btn) {
+            background-color: #516b6a;
+            border-color: #516b6a;
+            border-radius: 2px;
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: var(--lato);
+            color: #fff;
+            padding: 13px 0px;
+            width: 100%;
+
+            &:hover
+            {
+                background-color: transparent;
+                color: #516b6a;
+                transition: all 0.4s;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+    .contact
+    {
+        height: 300px;
+        background-size: cover;
+
+        .heading
+        {
+            font-size: 26px;
+    font-weight: 400;
+    padding-top: 45%;
+    padding-bottom: 0%;
+        }
+    }
+
+    .loaction
+    {
+        padding: 20px 0px;
+
+        .head_content
+        {
+            .head
+            {
+                font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+            }
+        }
+
+        .desc
+        {
+            font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+        }
+
+        .border
+        {
+            .contact_box
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+
+                .name
+{
+    font-size: 18px;
+}
+
+.link
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+                .para
+                {
+                    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    height: 15px;
+                }
+
+                svg
+{
+    font-size: 30px;
+}
+            }
+        }
+    }
+
+    .form_sec
+    {
+
+        .mb_4
+        {
+            margin-bottom: 1rem;
+        }
+
+        .form
+        {
+            padding: 20px 15px;
+
+            .label
+            {
+                font-size: 14px;
+            }
+
+            .top_content
+            {
+
+                .image
+                {
+                    width: 100%;
+                    height: 150px;
+                    position: relative;
+                }
+                .left_side
+                {
+                    .title
+                    {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        padding: 5px 0px 5px 10px;
+                    }
+
+                    .para
+                    {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .btn4:global(.btn)
+            {
+                margin-top: 10px;
+                font-size: 16px;
+                padding: 10px 0px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .contact
+    {
+        height: 400px;
+        background-size: cover;
+
+        .heading
+        {
+            font-size: 34px;
+    font-weight: 400;
+    padding-top: 25%;
+    padding-bottom: 0%;
+        }
+    }
+
+    .loaction
+    {
+        padding: 20px 0px;
+
+        .head_content
+        {
+            .head
+            {
+                font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+            }
+        }
+
+        .desc
+        {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .border
+        {
+            .contact_box
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+
+                .name
+{
+    font-size: 18px;
+}
+
+.link
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+                .para
+                {
+                    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    height: 35px;
+                }
+
+                svg
+{
+    font-size: 30px;
+}
+            }
+        }
+    }
+
+    .form_sec
+    {
+
+        .mb_4
+        {
+            margin-bottom: 1rem;
+        }
+
+        .form
+        {
+            padding: 25px;
+
+            .label
+            {
+                font-size: 16px;
+            }
+
+            .top_content
+            {
+
+                .image
+                {
+                    position: relative;
+                    height: 150px;
+                }
+                .left_side
+                {
+                    .title
+                    {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        padding: 5px 0px 5px 10px;
+                    }
+
+                    .para
+                    {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .btn4:global(.btn)
+            {
+                margin-top: 10px;
+                font-size: 16px;
+                padding: 10px 0px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .contact
+    {
+        height: 450px;
+        background-size: cover;
+
+        .heading
+        {
+            font-size: 50px;
+            font-weight: 400;
+            color: #fff;
+            padding: 18% 0% 0% 0%;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+            font-family: var(--lato);
+        }
+    }
+
+    .loaction
+    {
+        padding: 20px 0px;
+
+        .head_content
+        {
+            .head
+            {
+                font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+            }
+        }
+
+        .desc
+        {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .border
+        {
+            .contact_box
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+
+                .name
+{
+    font-size: 18px;
+}
+
+.link
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+                .para
+                {
+                    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    height: 35px;
+                }
+
+                svg
+{
+    font-size: 30px;
+}
+            }
+        }
+    }
+
+    .form_sec
+    {
+
+        .mb_4
+        {
+            margin-bottom: 1rem;
+        }
+
+        .form
+        {
+            padding: 25px;
+
+            .label
+            {
+                font-size: 16px;
+            }
+
+            .top_content
+            {
+
+                .image
+                {
+                    position: relative;
+                    height: 150px;
+                }
+                .left_side
+                {
+                    .title
+                    {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        padding: 5px 0px 5px 10px;
+                    }
+
+                    .para
+                    {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .btn4:global(.btn)
+            {
+                margin-top: 10px;
+                font-size: 16px;
+                padding: 10px 0px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1440px) {
+    .contact
+    {
+
+        .heading
+        {
+            font-size: 55px;
+            font-weight: 400;
+            color: #fff;
+            padding: 15% 0% 0% 0%;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+            font-family: var(--lato);
+        }
+    }
+}

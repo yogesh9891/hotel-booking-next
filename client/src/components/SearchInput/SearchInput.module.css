@@ -1,0 +1,109 @@
+.input {
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  justify-content: space-between;
+  width: 40%;
+  cursor: pointer !important;
+  box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
+  flex-wrap: wrap;
+  position: relative;
+}
+.input .location {
+  flex: 2;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #fff;
+  margin-bottom: 0;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.input .date {
+  flex: 2;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #fff;
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+  padding: 0px 10px;
+}
+.input .date::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+.input .date::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+.input .guest {
+  flex: 3;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.form_input {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  padding: 15px 9% 1% 9%;
+}
+
+@media only screen and (max-width: 991px) {
+  .form_input {
+    position: relative;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #fff;
+    padding: 0 0% 1% 0%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .form_input {
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #fff;
+    padding: 0 5% 1% 5%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .form_input {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    padding: 10px 6% 1% 6%;
+  }
+}/*# sourceMappingURL=SearchInput.module.css.map */

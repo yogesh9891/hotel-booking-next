@@ -1,0 +1,82 @@
+.tags {
+  background-color: #f1efed;
+  padding: 50px 0px;
+  margin-top: 60px;
+}
+.tags .tag_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.tags .tag_box .bg_color {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #526b67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tags .tag_box .bg_color .image {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.tags .tag_box .heading {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--lato);
+  color: #526b67;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  width: 171px;
+}
+
+@media (max-width: 576px) {
+  .tags {
+    padding: 30px 0px;
+    margin-top: 30px;
+  }
+  .tag_box {
+    text-align: center;
+    display: unset !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .bg_color {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .bg_color .image {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .tag_box .heading {
+    width: 100% !important;
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .tag_box .heading {
+    font-size: 1rem !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tags {
+    padding: 35px 0px;
+    margin-top: 40px;
+  }
+  .tags .tag_box {
+    margin-bottom: 1.5rem !important;
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .tags .tag_box .heading {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=Ecofriendly.module.css.map */

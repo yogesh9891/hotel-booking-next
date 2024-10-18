@@ -1,0 +1,310 @@
+
+
+.luxury_sec {
+    padding: 40px 0px;
+    background-color: #f9f5f1;
+    margin-bottom: 40px;
+
+     .head {
+        font-size: 1.9rem;
+        font-weight: 400;
+        font-family: var(--lato);
+        color: #1A1A1A;
+        margin-bottom: 5px;
+
+        span {
+            color: #526b67;
+        }
+    }
+
+  
+
+    .para {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--lato);
+        color: #84818E;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 1px solid #878787;
+        border-radius: 10px;
+        padding: 12px 10px;
+        min-height: 160px;
+
+        .image {
+            position: relative;
+            width: 100%;
+            height: 75px;
+            flex: 1;
+
+            img {
+               object-fit: contain;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 2;
+
+            .heading {
+                font-size: 17px;
+                font-weight: 500;
+                font-family: var(--lato);
+                margin-bottom: 0;
+                color: #526b67;
+                text-transform: capitalize;
+            }
+
+            .desc {
+                font-size: 13px;
+                font-weight: 400;
+                font-family: var(--lato);
+                color: #737373;
+                margin-bottom: 0;
+            }
+
+            .button {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: var(--lato);
+                color: #526b67;
+
+                svg {
+                    font-size: 20px;
+                    color: #526b67;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:575px){
+
+    .luxury_sec
+    {
+        padding: 25px 0px 15px 0px;
+        margin-bottom: 0px;
+
+        .head {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .para
+        {
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+
+        .card
+        {
+            margin-bottom: 1rem;
+            flex-direction: column;
+            padding: 10px 5px;
+            
+
+            .image
+            {
+                height: 50px;
+flex: unset;
+
+            }
+
+            .content
+            {
+                gap: 0px;
+                text-align: center;
+                justify-content: space-evenly;
+                .heading
+                {
+                    font-size: 12px;
+                }
+
+                .desc
+                {
+                    font-size: 10px;
+                }
+
+                .button
+                {
+                    font-size: 12px;
+                    justify-content: center;
+
+                    svg
+                    {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){
+
+    .luxury_sec
+    {
+        padding: 30px 0px 20px 0px;
+        margin-bottom: 0px;
+
+        .head {
+            font-size: 1.4rem !important;
+            margin-bottom: 5px!important;
+        }
+
+        .para
+        {
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+    }
+   
+    .card
+    {
+        flex-direction: column!important;
+        margin-bottom: 25px!important;
+        min-height: 150px;
+        text-align: center;
+
+        .image
+        {
+            height: 100px;
+            flex: unset!important;
+        }
+
+        .content
+        {
+           flex:unset!important;
+        gap: 5px!important;
+
+      
+     
+
+            .button
+        {
+            display: flex;
+justify-content: center;
+font-size: 14px;
+        
+        }
+        }
+
+      
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .luxury_sec
+    {
+        padding: 40px 0px;
+
+        .head
+        {
+            font-size: 26px;
+        }
+
+        .para
+        {
+            margin-bottom: 25px;
+        }
+        .card
+        {
+            flex-direction: column;
+            margin-bottom: 25px!important;
+            min-height: 230px;
+
+            .image
+            {
+                flex: auto;
+            }
+
+            .content
+            {
+                flex: auto;
+                text-align: center;
+
+                .button
+            {
+                display: flex;
+    justify-content: center;
+            }
+            }
+        }
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1024px) {
+    .luxury_sec
+    {
+        padding: 35px 0px;
+
+        .head
+        {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .para
+        {
+            margin-bottom: 20px;
+        }
+        .card
+        {
+            flex-direction: column;
+            margin-bottom: 25px!important;
+            min-height: 260px;
+
+            .image
+            {
+                flex: auto;
+            }
+
+            .content
+            {
+                flex: auto;
+                text-align: center;
+
+                .desc
+                {
+                    font-size: 13px;
+                }
+
+                .button
+            {
+                display: flex;
+    justify-content: center;
+            }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1440px) {
+    .luxury_sec
+    {
+
+        padding: 40px 0px;
+
+       
+        .card
+        {
+            min-height: 200px;
+
+        
+        }
+    }
+}

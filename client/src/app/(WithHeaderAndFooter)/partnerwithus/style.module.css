@@ -1,0 +1,24 @@
+.list_property_sec {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background-image: url("../../../assets/images/listyourproperty/listproperty.webp");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.45);
+}
+.list_property_sec .main_heading {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #fff;
+  margin-bottom: 0;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  width: 50%;
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+}/*# sourceMappingURL=style.module.css.map */

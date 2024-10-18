@@ -1,0 +1,97 @@
+.partner_sec {
+  margin-top: 50px;
+  background-image: url("/list_property.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  position: relative;
+  padding: 20px 0px;
+  background-attachment: fixed;
+}
+.partner_sec .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.partner_sec .content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.partner_sec .content .heading {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: var(--lato);
+  color: #fff;
+  margin-bottom: 10px;
+}
+.partner_sec .content .para {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.partner_sec .box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+.partner_sec .box .main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 35px;
+}
+.partner_sec .box .main_content .image {
+  width: 150px;
+  height: 155px;
+  position: relative;
+}
+.partner_sec .box .main_content .image img {
+  width: 100%;
+  height: 100%;
+}
+.partner_sec .box .main_content .title {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #fff;
+  margin-bottom: 10px;
+}
+.partner_sec .box .main_content .head {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+}
+.partner_sec .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.partner_sec .button .btn1:global(.btn) {
+  background-color: #1A1A1A;
+  border-color: #1A1A1A;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--lato);
+  border-radius: 0;
+  position: relative;
+  z-index: 2;
+}/*# sourceMappingURL=Partner.module.css.map */

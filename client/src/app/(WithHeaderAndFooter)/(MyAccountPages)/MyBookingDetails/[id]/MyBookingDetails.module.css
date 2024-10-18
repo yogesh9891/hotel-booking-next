@@ -1,0 +1,303 @@
+.view_details .heading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--lato);
+  color: #516b6a;
+  margin-bottom: 26px;
+}
+.view_details .main {
+  border: 1px solid #E4E4E4;
+  border-radius: 4px;
+}
+.view_details .main .top_sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E4E4E4;
+  padding: 20px 16px;
+}
+.view_details .main .top_sec .booking {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #737373;
+  gap: 2px;
+  margin-bottom: 0;
+}
+.view_details .main .top_sec .booking .id {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #1A1A1A;
+}
+.view_details .main .card_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 16px 0px 16px 16px;
+}
+.view_details .main .card_box .image {
+  width: 100%;
+  height: 309px;
+  position: relative;
+  flex: 3;
+}
+.view_details .main .card_box .image img {
+  width: 100%;
+  height: 100%;
+}
+.view_details .main .card_box .main_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  flex: 4;
+}
+.view_details .main .card_box .main_content .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.view_details .main .card_box .main_content .info a {
+  text-decoration: none;
+}
+.view_details .main .card_box .main_content .info .heading {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #516b6a;
+  margin-bottom: 0;
+}
+.view_details .main .card_box .main_content .info .location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.view_details .main .card_box .main_content .info .location svg {
+  font-size: 22px;
+  color: #737373;
+}
+.view_details .main .card_box .main_content .info .location .name {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #737373;
+  margin-bottom: 0;
+}
+.view_details .main .card_box .main_content .middle_sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+.view_details .main .card_box .main_content .middle_sec .check {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+.view_details .main .card_box .main_content .middle_sec .check .title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #737373;
+}
+.view_details .main .card_box .main_content .middle_sec .check .day {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+}
+.view_details .main .card_box .main_content .middle_sec .check .time {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #737373;
+}
+.view_details .main .card_box .main_content .middle_sec .check::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #E4E4E4;
+  top: 0;
+  left: -25px;
+}
+.view_details .main .card_box .main_content .middle_sec .check:first-child::before {
+  display: none;
+}
+.view_details .main .card_box .main_content .avail_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.view_details .main .card_box .main_content .avail_info .avail {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #737373;
+  margin-bottom: 0;
+  position: relative;
+}
+.view_details .main .card_box .main_content .avail_info .avail:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -9px;
+  background-color: #737373;
+  width: 1px;
+  height: 100%;
+}
+.view_details .main .card_box .main_content .avail_info .avail:first-child::before {
+  display: none;
+}
+.view_details .booking_detail {
+  padding: 40px 0px 50px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  flex-wrap: wrap;
+}
+.view_details .booking_detail .main_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+.view_details .booking_detail .main_detail .head {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--lato);
+  color: #516b6a;
+  margin-bottom: 0;
+}
+.view_details .booking_detail .main_detail .info {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+}
+.view_details .booking_detail .main_detail .info .data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.view_details .booking_detail .main_detail .info .data .text {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--lato);
+  color: #161616;
+}
+.view_details .booking_detail .main_detail .info .data .name {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #161616;
+}
+.view_details .booking_detail .main_detail .info .middle_sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.view_details .booking_detail .main_detail .info .middle_sec .check1 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+}
+.view_details .booking_detail .main_detail .info .middle_sec .check1 .title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #737373;
+}
+.view_details .booking_detail .main_detail .info .middle_sec .check1 .day {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+}
+.view_details .booking_detail .main_detail .info .middle_sec .check1 .time {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #737373;
+}
+.view_details .booking_detail .main_detail .info .middle_sec .check2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  position: relative;
+}
+.view_details .booking_detail .main_detail .info .middle_sec .check2 .title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #737373;
+}
+.view_details .booking_detail .main_detail .info .middle_sec .check2 .day {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+}
+.view_details .booking_detail .main_detail .info .middle_sec .check2 .time {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #737373;
+}
+.view_details .booking_detail .main_detail .method {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.view_details .booking_detail .main_detail .method .head {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #516b6a;
+  margin-bottom: 0;
+}
+.view_details .booking_detail .main_detail .method .pay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.view_details .booking_detail .main_detail .method .pay .image {
+  width: 32px;
+  height: 20px;
+  position: relative;
+}
+.view_details .booking_detail .main_detail .method .pay .image img {
+  width: 100%;
+  height: 100%;
+}
+.view_details .booking_detail .main_detail .method .pay .number {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #161616;
+  margin-bottom: 0;
+}
+.view_details .booking_detail .info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 47%;
+  background-color: #E4E4E4;
+  width: 1px;
+  height: 100%;
+}/*# sourceMappingURL=MyBookingDetails.module.css.map */

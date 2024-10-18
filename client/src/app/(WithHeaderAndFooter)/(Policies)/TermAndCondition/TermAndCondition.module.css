@@ -1,0 +1,40 @@
+.terms_sec {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.terms_sec a {
+  text-decoration: none;
+}
+.terms_sec .head {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+  margin-bottom: 0;
+}
+.terms_sec .para {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #737373;
+  margin-bottom: 0;
+}
+.terms_sec .span {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+}
+.terms_sec .list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.terms_sec .list .para {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #737373;
+}/*# sourceMappingURL=TermAndCondition.module.css.map */

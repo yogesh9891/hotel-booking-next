@@ -1,0 +1,139 @@
+.input {
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    justify-content: space-between;
+    width: 40%;
+    cursor: pointer !important;
+    box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, .15);
+    flex-wrap: wrap;
+    position: relative;
+
+
+    .location {
+        flex: 2;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: var(--lato);
+        color: #fff;
+        margin-bottom: 0;
+        position: relative;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        line-clamp: 1;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+
+    .date {
+        flex: 2;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: var(--lato);
+        color: #fff;
+        margin-bottom: 0;
+        position: relative;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .date::before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+
+    .date::after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0px;
+    }
+
+    .guest {
+        flex: 3;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: var(--lato);
+        color: #fff;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
+
+
+// .form_input {
+//     position: fixed;
+//     top: 5rem;
+//     left: 0;
+//     width: 100%;
+//     z-index: 1;
+//     background-color: #fff;
+//     padding: 15px 9% 1% 9%;
+// }
+.form_input {
+    // position: fixed;
+    // top: 5rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #fff;
+    padding: 1% 15% 2% 15%;
+}
+
+// @media only screen and (max-width:991px) {
+//     .form_input {
+//         position: relative;
+//         top: 0rem;
+//         left: 0;
+//         width: 100%;
+//         z-index: 1;
+//         background-color: #fff;
+//         padding: 5%;
+//     }
+// }
+
+
+@media only screen  and (max-width:374px) {
+    .form_input {
+  
+        padding:  0% 2% 5% 2%;
+       
+    }
+}
+@media only screen and (min-width:375px)  and (max-width:767px) {
+    .form_input {
+  
+        padding:  0% 5% 5% 5%;
+
+    }
+}
+@media only screen and (min-width:768px)  and (max-width:991px) {
+    .form_input {
+  
+        padding:  0% 5% 2% 5%;
+    }
+}
+@media only screen and (min-width:992px)  and (max-width:1199px) {
+    .form_input {
+  
+        padding:  2% 5% 5% 5%;
+        height: 100vh!important;
+    }
+}
+@media only screen and (min-width:1200px) and (max-width:1440px) {
+    .form_input {
+    padding: 0px 5% 1% 5%;
+    }
+}

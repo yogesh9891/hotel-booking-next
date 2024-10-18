@@ -1,0 +1,495 @@
+.myaccount {
+
+    .heading {
+        font-size: 30px;
+        font-weight: 500;
+        font-family: var(--lato);
+        color: #1A1A1A;
+        margin-bottom: 25px;
+        padding: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid #E4E4E4;
+    }
+
+    .mb_4
+    {
+        margin-bottom: 1.5rem;
+    }
+
+
+    .tab_content {
+        border: 1px solid #E4E4E4;
+        padding: 24px;
+
+        .top_sec {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            .title {
+                font-size: 22px;
+                font-weight: 500;
+                font-family: var(--lato);
+                color: #1A1A1A;
+                margin-bottom: 0;
+            }
+
+            .btn1:global(.btn) {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+                font-size: 20px;
+                font-weight: 400;
+                font-family: var(--lato);
+                color: #516b6a;
+
+                svg {
+                    font-size: 20px;
+                    color: #516b6a;
+                }
+            }
+        }
+
+
+        .label {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: var(--lato);
+            color: #1A1A1A;
+            margin-bottom: 3px;
+
+            span
+            {
+                color: #516b6a;
+            }
+        }
+
+        .icon {
+            position: relative;
+
+            .form_control {
+                border-radius: 2px;
+                border: 1.333px solid #E4E4E4;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: var(--lato);
+                color: #959595;
+                resize: none;
+                position: relative;
+            }
+
+            svg {
+                position: absolute;
+                top: 0.7rem;
+                right: 0.9rem;
+                font-size: 22px;
+                color: rgba(149, 149, 149, 1);
+            }
+
+            .btn2 {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: var(--lato);
+                color: #516b6a;
+                text-decoration: underline;
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        .form_control:global(.form-control:focus) {
+            box-shadow: none;
+        }
+
+        .bottom_bar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .gender_box {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .gender {
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: var(--lato);
+                    color: #1A1A1A;
+                }
+
+                .inputs {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 12px;
+
+                    .check:global(.form-check) {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 10px;
+                        margin-bottom: 0;
+
+                        .radio:global(.form-check-input) {
+                            border-color: rgba(149, 149, 149, 1);
+                        }
+
+                        .input_label:global(.form-check-label) {
+                            font-size: 14px;
+                            font-weight: 400;
+                            font-family: var(--lato);
+                            color: #1A1A1A;
+                        }
+
+                        .radio:global(.form-check-input:checked) {
+                            background-color: #516b6a;
+                            border-color: #516b6a;
+                        }
+
+                        .radio:global(.form-check-input:focus) {
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 30px;
+
+                .btn3:global(.btn) {
+                    background-color: transparent;
+                    border-color: #516b6a;
+                    padding: 13px 35px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-family: var(--lato);
+                    color: #516b6a;
+                    border-radius: 0px;
+
+                    &:hover
+                    {
+                        background-color: #516b6a;
+                        color: #fff;
+                    }
+                }
+
+                .btn4:global(.btn) {
+                    background-color: #516b6a;
+                    border-color: #516b6a;
+                    padding: 13px 35px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-family: var(--lato);
+                    color: #fff;
+                    border-radius: 0px;
+
+                    &:hover
+                    {
+                        background-color: #1A1A1A;
+                      border-color: #1A1A1A;
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+
+            .btn3:global(.btn) {
+                background-color: transparent;
+                border-color: #737373;
+                padding: 13px 35px;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: var(--lato);
+                color: #737373;
+                border-radius: 0px;
+            }
+
+            .btn4:global(.btn) {
+                background-color: #516b6a;
+                border-color: #516b6a;
+                padding: 13px 35px;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: var(--lato);
+                color: #fff;
+                border-radius: 0px;
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:767px){
+    .myaccount {
+
+        .mb_4
+        {
+            margin-bottom: .6rem;
+        }
+
+        .heading {
+            font-size: 1rem ;
+            margin-bottom: 1rem ;
+            text-transform: uppercase;
+            padding:15px 10px;
+        }
+     
+        .label{
+            font-size: 0.75rem !important;
+            span{
+                font-size: 0.7rem !important;
+                color: #516b6a;
+                font-weight: 600;
+                margin-left: 0rem;
+            }
+        }
+
+        .tab_content
+        {
+            padding: 15px;
+
+            .top_sec{
+                margin-bottom: 10px ;
+                .title{
+                    font-size: 1.1rem ;
+                }
+                .btn1:global(.btn){
+                    gap: 8px;
+                    font-size: 1rem;
+                    svg{
+                    font-size: 0.8rem ;
+    
+                    }
+                }
+            }
+
+            .icon 
+            {
+                .form_control
+        {
+            font-size: 13px;
+        }
+            }
+
+            .bottom_bar
+            {
+                .buttons
+                {
+                    .btn3:global(.btn)
+                    {
+                        padding: 8px 35px;
+    font-size: 13px;
+                    }
+                    .btn4:global(.btn)
+                    {
+                        padding: 8px 35px;
+    font-size: 13px;
+                    }
+                }
+
+                .gender_box
+                {
+                    gap: 10px;
+                    .gender
+                    {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+     
+
+        
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .myaccount {
+
+        .mb_4
+        {
+            margin-bottom: 10px;
+        }
+
+        .heading {
+            font-size: 1rem ;
+            margin-bottom: 1rem ;
+            text-transform: uppercase;
+            padding:15px 10px;
+        }
+     
+        .label{
+            font-size: 0.85rem !important;
+            span{
+                font-size: 0.85rem !important;
+                color: #516b6a;
+                font-weight: 600;
+                margin-left: 0rem;
+            }
+        }
+
+        .tab_content
+        {
+            padding: 15px;
+
+            .top_sec{
+                margin-bottom: 10px ;
+                .title{
+                    font-size: 1.1rem ;
+                }
+                .btn1:global(.btn){
+                    gap: 8px;
+                    font-size: 1rem;
+                    svg{
+                    font-size: 0.8rem ;
+    
+                    }
+                }
+            }
+
+            .icon 
+            {
+                .form_control
+        {
+            font-size: 13px;
+        }
+            }
+
+            .bottom_bar
+            {
+                .buttons
+                {
+                    .btn3:global(.btn)
+                    {
+                        padding: 8px 35px;
+    font-size: 13px;
+                    }
+                    .btn4:global(.btn)
+                    {
+                        padding: 8px 35px;
+    font-size: 13px;
+                    }
+                }
+
+                .gender_box
+                {
+                    gap: 10px;
+                    .gender
+                    {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+     
+
+        
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1440px){
+    .myaccount {
+
+        .mb_4
+        {
+            margin-bottom: 15px;
+        }
+
+        .heading {
+            font-size: 1.5rem ;
+            margin-bottom: 1.2rem ;
+            text-transform: uppercase;
+            padding:20px;
+        }
+     
+        .label{
+            font-size: 0.9rem !important;
+            span{
+                font-size: 0.9rem !important;
+                color: #516b6a;
+                font-weight: 600;
+                margin-left: 0rem;
+            }
+        }
+
+        .tab_content
+        {
+            padding: 20px;
+
+            .top_sec{
+                margin-bottom: 15px ;
+                .title{
+                    font-size: 1.1rem ;
+                }
+                .btn1:global(.btn){
+                    gap: 8px;
+                    font-size: 1rem;
+                    svg{
+                    font-size: 0.8rem ;
+    
+                    }
+                }
+            }
+
+            .icon 
+            {
+                .form_control
+        {
+            font-size: 15px;
+        }
+            }
+
+            .bottom_bar
+            {
+                .buttons
+                {
+                    .btn3:global(.btn)
+                    {
+                        padding: 10px 35px;
+    font-size: 15px;
+                    }
+                    .btn4:global(.btn)
+                    {
+                        padding: 10px 35px;
+    font-size: 15px;
+                    }
+                }
+
+                .gender_box
+                {
+                    gap: 10px;
+                    .gender
+                    {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+     
+
+        
+    }
+}

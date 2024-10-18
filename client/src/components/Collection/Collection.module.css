@@ -1,0 +1,293 @@
+.collection_sec {
+  padding: 40px 0px 0px 0px;
+}
+.collection_sec .head {
+  font-size: 38px;
+  font-weight: 400 !important;
+  font-family: var(--lato);
+  color: #1A1A1A;
+  margin-bottom: 10px;
+}
+.collection_sec .head span {
+  color: #526b67;
+}
+.collection_sec .para {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #84818E;
+  margin-bottom: 35px;
+}
+.collection_sec a {
+  text-decoration: none;
+}
+.collection_sec .box {
+  position: relative;
+  border-radius: 15px;
+}
+.collection_sec .box .image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  transition: transform 0.42s cubic-bezier(0.39, 0.575, 0.565, 1);
+  filter: grayscale(30%);
+}
+.collection_sec .box .image img {
+  border-radius: 15px;
+}
+.collection_sec .box .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0%;
+  text-align: center;
+  z-index: 5;
+}
+.collection_sec .box .content .text {
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #fff;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  text-transform: capitalize;
+  text-align: center;
+}
+.collection_sec .box .hover_content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 6;
+}
+.collection_sec .box .hover_content .title {
+  font-size: 28px;
+  font-family: var(--lato);
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.collection_sec .box .hover_content .para {
+  font-size: 16px;
+  font-family: var(--lato);
+  font-weight: 400;
+  color: #fff;
+}
+.collection_sec .box:hover .hover_content {
+  opacity: 1;
+  visibility: visible;
+  border: 2px solid #fff;
+  width: 93%;
+  height: 88%;
+  margin: 0 auto;
+  padding: 12% 3%;
+  transform: translateY(23px);
+  transition: all 0.5s ease-in-out;
+}
+.collection_sec .box:hover .image {
+  filter: grayscale(0%);
+  transition: all 0.3s ease-in-out;
+}
+.collection_sec .box:hover .image img {
+  border-radius: 0;
+}
+.collection_sec .box:hover .image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.collection_sec .box:hover .content {
+  opacity: 0;
+  visibility: hidden;
+}
+.collection_sec .collect_swiper {
+  padding: 40px 0px;
+}
+.collection_sec .collect_swiper .slide {
+  background-color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 507px;
+  min-height: 507px;
+  min-width: 345px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.collection_sec .collect_swiper .slide img {
+  border-radius: 10px;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+}
+.collection_sec .collect_swiper .slide .title_container {
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  left: 20px;
+  position: absolute;
+  transition: height 0.5s ease-in-out;
+  z-index: 100;
+}
+.collection_sec .collect_swiper .slide .title_container h5 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: var(--lato);
+}
+.collection_sec .collect_swiper .slide .title_container .desc {
+  font-size: 18px;
+  color: #fff;
+  animation: fadein 1.5s ease-in-out;
+  display: none;
+  font-weight: 400;
+  line-height: 23px;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.collection_sec .collect_swiper .slide:hover {
+  min-width: 500px;
+  transition: all 0.5s ease-in-out;
+}
+.collection_sec .collect_swiper .slide:hover img {
+  opacity: 0.5;
+}
+.collection_sec .collect_swiper .slide:hover .title_container .desc {
+  display: block;
+}
+.collection_sec .collect_swiper .slide:nth-child(even) {
+  transform: translateY(-20px);
+}
+
+@media (max-width: 576px) {
+  .collection_sec .head {
+    font-size: 1.3rem;
+  }
+  .box .image, .box1 .image1, .box3 .image3, .box2 .image2 {
+    height: 170px !important;
+  }
+  .mobilemb5 {
+    margin-bottom: 5px;
+  }
+  .collection_sec {
+    padding-top: 15px;
+  }
+  .collection_sec .head {
+    font-size: 24px;
+  }
+  .collection_sec .para {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .collection_sec .box .content .text {
+    padding: 5px;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+  .collect_swiper {
+    padding: 25px 0px !important;
+  }
+  .collect_swiper .slide {
+    height: 253px !important;
+    min-height: 253px !important;
+    min-width: 160px !important;
+  }
+  .collect_swiper .slide .title_container {
+    position: absolute;
+    left: 5px;
+  }
+  .collect_swiper .slide .title_container h5 {
+    font-size: 16px !important;
+  }
+  .collect_swiper .slide .title_container .desc {
+    display: none !important;
+  }
+  .collect_swiper .slide:hover {
+    min-width: 160px !important;
+  }
+  .collect_swiper .slide:hover img {
+    opacity: 0.5;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hover_content {
+    display: none !important;
+  }
+  .content .text {
+    font-size: 14px;
+  }
+  .mobilemb5 {
+    margin-bottom: 1rem;
+  }
+  .collection_sec {
+    padding: 30px 0px 0px 0px;
+  }
+  .collection_sec .head {
+    font-size: 30px;
+  }
+  .collection_sec .para {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .collection_sec .collect_swiper {
+    padding: 35px 0px 0px 0px !important;
+  }
+  .collection_sec .collect_swiper .slide {
+    height: 320px !important;
+    min-height: 320px !important;
+    min-width: 280px !important;
+  }
+  .collection_sec .collect_swiper .slide .title_container {
+    position: absolute;
+    left: 15px;
+  }
+  .collection_sec .collect_swiper .slide .title_container h5 {
+    font-size: 18px !important;
+  }
+  .collection_sec .collect_swiper .slide .title_container .desc {
+    display: none !important;
+  }
+  .collection_sec .collect_swiper .slide:hover {
+    min-width: 260px !important;
+  }
+  .collection_sec .collect_swiper .slide:hover img {
+    opacity: 0.5;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .collection_sec {
+    padding: 40px 0px 0px 0px;
+  }
+  .collection_sec .head {
+    font-size: 34px;
+  }
+  .collection_sec .para {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .collection_sec .collect_swiper {
+    padding: 35px 0px 0px 0px !important;
+  }
+}/*# sourceMappingURL=Collection.module.css.map */

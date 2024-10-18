@@ -1,0 +1,147 @@
+.offer_sec {
+  padding-top: 50px;
+}
+.offer_sec .title {
+  margin-bottom: 26px;
+  position: relative;
+  text-align: center;
+  width: 945px;
+  margin: 0 auto;
+}
+.offer_sec .title .text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+.offer_sec .title::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #737373;
+}
+.offer_sec .head {
+  font-size: 44px;
+  font-weight: 600;
+  font-family: var(--lato);
+  color: #1A1A1A;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.offer_sec .head span {
+  color: #1A1A1A;
+}
+.offer_sec .para {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #84818E;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.offer_sec .slide {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 20px;
+  background-color: #ebebeb;
+  overflow: hidden;
+}
+.offer_sec .slide .image {
+  width: 200px;
+  height: 180px;
+  position: relative;
+}
+.offer_sec .slide .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+}
+.offer_sec .slide .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 10px;
+  position: relative;
+}
+.offer_sec .slide .content .offer {
+  font-size: 11px;
+  font-weight: 400;
+  font-family: var(--lato);
+  color: #fff;
+  position: absolute;
+  top: -7px;
+  right: 3px;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 0;
+}
+.offer_sec .slide .content .name {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.offer_sec .slide .content .location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #716e6e;
+  margin-bottom: 0;
+}
+.offer_sec .slide .content .location svg {
+  font-size: 18px;
+  color: #716e6e;
+}
+.offer_sec .slide .content .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 0;
+}
+.offer_sec .slide .content .price .text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+}
+.offer_sec .slide .content .price .cut_price {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #716e6e;
+  text-decoration: line-through;
+}
+.offer_sec .slide .content .price .main_price {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+}
+.offer_sec .slide .content::before {
+  content: "";
+  position: absolute;
+  background-image: url("/offer.png");
+  background-size: 100% 100%;
+  width: 40px;
+  height: 85px;
+  top: -13px;
+  right: -6px;
+  z-index: 1;
+}/*# sourceMappingURL=BookingOffers.module.css.map */

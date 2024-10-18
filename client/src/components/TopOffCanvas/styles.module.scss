@@ -1,0 +1,76 @@
+.top_offcanvas {
+  .top_header {
+    border: none !important;
+    padding:  10px 10px 10px  0px !important;
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    background-color: #f2f2f2;
+  }
+
+  .top_body {
+    overflow-y: visible !important;
+    padding: 15px 0px 0px 0px !important;
+  }
+}
+
+@media only  screen and (max-width:575px) {
+  .top_offcanvas
+  {
+
+    .top_header
+    {
+      top: 30%!important;
+
+    }
+    .top_body
+    {
+      padding-top: 0px!important;
+    }
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .top_offcanvas .top_header {
+    border: none !important;
+    padding: 10px 10px 10px 0px !important;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    background-color: #f2f2f2;
+    z-index: 999999 !important;
+}
+}
+
+@media  only screen and (min-width:768px) and (max-width:991px) {
+  .top_offcanvas .top_header {
+    border: none !important;
+    padding: 10px 10px 10px 0px !important;
+    position: absolute;
+    right: 5%;
+   top: 40%;
+    background-color: #f2f2f2;
+    z-index: 999999 !important;
+}
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+  .top_offcanvas
+  {
+    .top_header
+    {
+      right: 5%;
+    top: 30%;
+    }
+  }
+}
+@media only screen and (min-width:1200px) and (max-width:1440px) {
+  .top_offcanvas
+  {
+    .top_header
+    {
+      right: 5%;
+  top: 25%;
+    }
+  }
+}

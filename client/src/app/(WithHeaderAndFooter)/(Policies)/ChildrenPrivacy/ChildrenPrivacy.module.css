@@ -1,0 +1,40 @@
+.children_sec {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.children_sec a {
+  text-decoration: none;
+}
+.children_sec .head {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+  margin-bottom: 0;
+}
+.children_sec .para {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #737373;
+  margin-bottom: 0;
+}
+.children_sec .list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.children_sec .list .item {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #737373;
+}
+.children_sec .desc {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--lato);
+  color: #1A1A1A;
+}/*# sourceMappingURL=ChildrenPrivacy.module.css.map */
